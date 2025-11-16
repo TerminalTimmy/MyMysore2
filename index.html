@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMysuru - Your Essential Tour Companion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
+    
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#top" class="logo">
+                <span class="logo-my">My</span>Mysuru
+            </a>
+            
+            <div class="nav-items">
+                <ul class="nav-links">
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="Hotels.html">Stay</a></li>
+                    <li><a href="#reviews-section">Reviews</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="#signin" class="btn btn-signin">Sign In</a>
+                    <a href="#signup" class="btn btn-signup">Sign Up</a>
+                </div>
+            </div>
+
+            <label for="menu-toggle" class="menu-toggle">
+                <div class="hamburger"></div>
+            </label>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <label for="menu-toggle" class="close-label">×</label>
+        <ul class="sidebar-items">
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#stay">Stay</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="sidebar-buttons">
+            <a href="#signin" class="btn btn-signin">Sign In</a>
+            <a href="#signup" class="btn btn-signup">Sign Up</a>
+        </div>
+    </div>
+
+    <section id="top" class="hero-swiper">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://as1.ftcdn.net/v2/jpg/12/52/05/78/1000_F_1252057818_x4ypPPg6xHoOGEqHuwtgJvwZjg0IVZXQ.jpg');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">DISCOVER ROYAL MYSURU</h1>
+                        <p class="slide-subtitle">
+                            Tradition, Tranquility and Tales of Kings await you in this Royal City
+                        </p>
+                        <div class="slide-actions">
+                            <a href="#weather-section" class="hero-btn hero-btn-primary">Start Your Journey</a>
+                            <a href="#stay" class="hero-btn hero-btn-secondary">Find a Stay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://as2.ftcdn.net/v2/jpg/00/56/39/11/1000_F_56391170_W2Ipi0pyw2piJddmqgpdrCzfp8eYiKx4.jpg');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">MYSORE PALACE</h1>
+                        <p class="slide-subtitle">
+                            Marvel at the architectural grandeur of the iconic Mysore Palace
+                        </p>
+                        <div class="slide-actions">
+                            <a href="#attractions" class="hero-btn hero-btn-primary">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/c7/9c/53/green-hotel.jpg?w=1800&h=-1&s=1');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">LUXURY STAYS</h1>
+                        <p class="slide-subtitle">
+                            Experience world-class hospitality in heritage hotels and luxury resorts
+                        </p>
+                        <div class="slide-actions">
+                            <a href="#stay" class="hero-btn hero-btn-primary">Find Your Stay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="weather-section" id="weather-section">
+        <div class="weather-container">
+            <h2 class="section-title">Mysuru Weather</h2>
+            <div id="weather-widget" class="weather-widget">
+                <div class="weather-loading">
+                    <div class="spinner"></div>
+                    <p>Loading weather data...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="features">
+        <h2 class="section-title">Explore Mysuru</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏰</div>
+                <h3 class="feature-title">Historic Palaces</h3>
+                <p class="feature-description">Experience the grandeur of Mysore Palace and other architectural marvels that tell stories of royal heritage.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍛</div>
+                <h3 class="feature-title">Local Cuisine</h3>
+                <p class="feature-description">Savor authentic Mysuru delicacies and traditional South Indian flavors at the finest restaurants.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏨</div>
+                <h3 class="feature-title">Comfortable Stays</h3>
+                <p class="feature-description">Find the perfect accommodation from luxury hotels to cozy homestays for your royal experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="reviews-section" id="reviews-section">
+        <h2 class="section-title">What Travelers Say</h2>
+        
+        <!-- Add Review Form -->
+        <div class="add-review-form">
+            <h3 class="form-title">Share Your Experience</h3>
+            <form id="reviewForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="reviewerName">Your Name</label>
+                        <input type="text" id="reviewerName" class="form-input" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reviewRating">Rating</label>
+                        <select id="reviewRating" class="form-select" required>
+                            <option value="">Select rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐ (5 stars)</option>
+                            <option value="4">⭐⭐⭐⭐ (4 stars)</option>
+                            <option value="3">⭐⭐⭐ (3 stars)</option>
+                            <option value="2">⭐⭐ (2 stars)</option>
+                            <option value="1">⭐ (1 star)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="reviewText">Your Review</label>
+                    <textarea id="reviewText" class="form-textarea" placeholder="Share your experience visiting Mysuru..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <span class="quote-icon">"</span>
+                <div class="review-header">
+                    <div class="reviewer-avatar">RK</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Rajesh Kumar</div>
+                        <div class="review-date">October 2024</div>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">
+                    Mysuru is absolutely magical! The palace is breathtaking, especially when lit up at night. The local cuisine was amazing, and everyone was so welcoming. A must-visit destination!
+                </p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">"</span>
+                <div class="review-header">
+                    <div class="reviewer-avatar">SP</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Sarah Patel</div>
+                        <div class="review-date">September 2024</div>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">
+                    Perfect blend of history and culture. The Chamundi Hills offer stunning views, and the city's cleanliness impressed me. Great shopping for silk sarees too!
+                </p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">"</span>
+                <div class="review-header">
+                    <div class="reviewer-avatar">AM</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Anil Mehta</div>
+                        <div class="review-date">November 2024</div>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star empty">★</span>
+                </div>
+                <p class="review-text">
+                    Wonderful experience visiting Mysuru! Rich heritage, beautiful gardens, and excellent food. The Dasara festival time would be even better. Highly recommended for families.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="faq-section" id="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is the best time to visit Mysuru?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The best time to visit Mysuru is from October to February when the weather is pleasant. September-October is especially popular due to the grand Dasara festival celebrations. Avoid summer months (March-May) as temperatures can be quite high.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How many days are needed to explore Mysuru?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A 2-3 day trip is ideal to cover major attractions like Mysore Palace, Chamundi Hills, St. Philomena's Church, Brindavan Gardens, and the local markets. Add an extra day if you want to visit nearby places like Srirangapatna or take day trips.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are the must-visit attractions in Mysuru?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Must-visit attractions include the Mysore Palace, Chamundi Hills and Temple, Brindavan Gardens (with musical fountain), St. Philomena's Cathedral, Mysore Zoo, Jaganmohan Palace & Art Gallery, and the Devaraja Market for local shopping.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is Mysuru famous for?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Mysuru is famous for its magnificent palace, silk sarees, sandalwood products, traditional Mysore Pak sweet, yoga (home of Ashtanga Yoga), the annual Dasara festival, incense sticks (agarbatti), and its rich cultural heritage as the former capital of the Wodeyar dynasty.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I get to Mysuru?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Mysuru is well-connected by road and rail. The nearest airport is in Bangalore (170 km away). Regular buses and trains run from Bangalore (3-4 hours). You can also hire a cab or drive. The city has good local transportation including auto-rickshaws and app-based cabs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What local dishes should I try in Mysuru?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Don't miss Mysore Masala Dosa, authentic Mysore Pak (sweet), Bisi Bele Bath, traditional South Indian thalis, filter coffee, and local street food. Visit places like RRR Restaurant, Hotel Mylari, and Guru Sweet Mart for authentic experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyMysuru</h3>
+                    <p>Your essential companion for exploring the royal heritage and cultural richness of Mysuru. Discover palaces, savor local cuisine, and create unforgettable memories.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📧</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#attractions">Attractions</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#stay">Stay</a></li>
+                        <li><a href="#reviews-section">Reviews</a></li>
+                        <li><a href="#top">Back to Top</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Mysuru, Karnataka, India</p>
+                    <p>📞 +91 876 5432 100</p>
+                    <p>✉️ my@mysuru.com</p>
+                    <p>🕐 24/7 Support Available</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyMysuru. All rights reserved. Made with ❤️ for travelers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

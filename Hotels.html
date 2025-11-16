@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - MyMysuru</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Hotels.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-my">My</span>Mysuru
+            </a>
+            
+            <div class="nav-items">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#top">Hotels</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="index.html#reviews-section">Reviews</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="#signin" class="btn btn-signin">Sign In</a>
+                    <a href="#signup" class="btn btn-signup">Sign Up</a>
+                </div>
+            </div>
+
+            <label for="menu-toggle" class="menu-toggle">
+                <div class="hamburger"></div>
+            </label>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <label for="menu-toggle" class="close-label">×</label>
+        <ul class="sidebar-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="sidebar-buttons">
+            <a href="#signin" class="btn btn-signin">Sign In</a>
+            <a href="#signup" class="btn btn-signup">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Mysuru's Finest Hotels</h1>
+            <p class="hero-subtitle">Experience royal hospitality in the cultural capital of Karnataka</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Section Title -->
+    <div class="section-header">
+        <h2 class="section-title">Featured Hotels</h2>
+        <p class="section-subtitle">Handpicked accommodations for an unforgettable stay</p>
+    </div>
+
+    <!-- Swiper Slider Container -->
+    <div class="slider-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Hotel Card 1 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400" alt="Hotel Royal Gateway">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel ROYAL GATEWAY</h3>
+                            <p class="hotel-description">An all-inclusive hotel offering guided tours and curated experiences, bringing the royal charm of Mysore to its guests.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.8</span>
+                                <span class="price">₹3,500/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 2 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400" alt="Hotel Boutique">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel BOUTIQUE</h3>
+                            <p class="hotel-description">Nestled in the heart of the city's vibrant cultural district, this charming boutique hotel offers a perfect blend of tradition and modernity.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.9</span>
+                                <span class="price">₹4,200/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 3 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400" alt="Hotel Chamundi Heights">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel CHAMUNDI HEIGHTS</h3>
+                            <p class="hotel-description">A serene resort offering panoramic views of Chamundi Hill and the surrounding countryside.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.7</span>
+                                <span class="price">₹3,800/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 4 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=400" alt="Hotel Palace View">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel PALACE VIEW ROYALE</h3>
+                            <p class="hotel-description">A luxury hotel offering stunning views of the Mysore Palace and world-class amenities.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 5.0</span>
+                                <span class="price">₹6,500/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 5 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400" alt="Hotel Silver Lotus">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel SILVER LOTUS</h3>
+                            <p class="hotel-description">A budget-friendly hotel with comfortable rooms and a warm, welcoming atmosphere, located near the city center.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.5</span>
+                                <span class="price">₹2,000/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 6 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400" alt="Hotel Green Meadows">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel GREEN MEADOWS</h3>
+                            <p class="hotel-description">An eco-friendly hotel tucked away in the lush greenery of the outskirts, focusing on sustainability and nature-based experiences.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.6</span>
+                                <span class="price">₹2,800/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 7 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?w=400" alt="Hotel Heritage Inn">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel HERITAGE INN</h3>
+                            <p class="hotel-description">A beautifully restored heritage property featuring traditional architecture and modern comforts in the heart of old Mysore.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.7</span>
+                                <span class="price">₹4,000/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 8 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=400" alt="Hotel Sunrise Plaza">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel SUNRISE PLAZA</h3>
+                            <p class="hotel-description">A modern business hotel with conference facilities, high-speed internet, and close proximity to the city's commercial district.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.4</span>
+                                <span class="price">₹3,200/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 9 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400" alt="Hotel Mystic Gardens">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel MYSTIC GARDENS</h3>
+                            <p class="hotel-description">A wellness retreat offering spa treatments, yoga sessions, and meditation spaces amidst beautiful landscaped gardens.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.8</span>
+                                <span class="price">₹5,200/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 10 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400" alt="Hotel Lakeside Retreat">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel LAKESIDE RETREAT</h3>
+                            <p class="hotel-description">Nestled by Karanji Lake, this peaceful hotel offers water sports, bird watching, and stunning sunset views from every room.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.6</span>
+                                <span class="price">₹3,600/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 11 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?w=400" alt="Hotel Royal Orchid">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel ROYAL ORCHID</h3>
+                            <p class="hotel-description">A five-star luxury experience with world-class dining, swimming pools, and personalized concierge services for discerning travelers.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 5.0</span>
+                                <span class="price">₹8,500/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 12 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400" alt="Hotel Cozy Corner">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel COZY CORNER</h3>
+                            <p class="hotel-description">An affordable family-run hotel offering clean rooms, home-cooked meals, and warm hospitality near the railway station.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.3</span>
+                                <span class="price">₹1,500/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 13 -->
+                <div class="swiper-slide">
+                    <div class="hotel-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400" alt="Hotel Garden Palace">
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3 class="hotel-name">Hotel GARDEN PALACE</h3>
+                            <p class="hotel-description">Surrounded by vibrant flower gardens and fountains, this hotel provides a tranquil escape with outdoor dining and cultural performances.</p>
+                            <div class="card-footer">
+                                <span class="rating">⭐ 4.7</span>
+                                <span class="price">₹4,500/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <h2 class="section-title">Share Your Experience</h2>
+        <p class="section-subtitle">Help others discover the perfect stay in Mysuru</p>
+
+        <!-- Add Review Form -->
+        <div class="add-review-form">
+            <form id="hotelReviewForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="guestName">Your Name</label>
+                        <input type="text" id="guestName" class="form-input" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="hotelName">Hotel Name</label>
+                        <select id="hotelName" class="form-select" required>
+                            <option value="">Select a hotel</option>
+                            <option value="royal-gateway">Hotel ROYAL GATEWAY</option>
+                            <option value="boutique">Hotel BOUTIQUE</option>
+                            <option value="chamundi-heights">Hotel CHAMUNDI HEIGHTS</option>
+                            <option value="palace-view">Hotel PALACE VIEW ROYALE</option>
+                            <option value="silver-lotus">Hotel SILVER LOTUS</option>
+                            <option value="green-meadows">Hotel GREEN MEADOWS</option>
+                            <option value="heritage-inn">Hotel HERITAGE INN</option>
+                            <option value="sunrise-plaza">Hotel SUNRISE PLAZA</option>
+                            <option value="mystic-gardens">Hotel MYSTIC GARDENS</option>
+                            <option value="lakeside-retreat">Hotel LAKESIDE RETREAT</option>
+                            <option value="royal-orchid">Hotel ROYAL ORCHID</option>
+                            <option value="cozy-corner">Hotel COZY CORNER</option>
+                            <option value="garden-palace">Hotel GARDEN PALACE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="rating">Rating</label>
+                        <select id="rating" class="form-select" required>
+                            <option value="">Select rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                            <option value="4">⭐⭐⭐⭐ Very Good</option>
+                            <option value="3">⭐⭐⭐ Good</option>
+                            <option value="2">⭐⭐ Fair</option>
+                            <option value="1">⭐ Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="visitDate">Visit Date</label>
+                        <input type="date" id="visitDate" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="reviewText">Your Review</label>
+                    <textarea id="reviewText" class="form-textarea" placeholder="Share your experience at the hotel..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyMysuru</h3>
+                    <p>Your essential companion for exploring the royal heritage and cultural richness of Mysuru. Discover palaces, savor local cuisine, and create unforgettable memories.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📧</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#top">Hotels</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="index.html#reviews-section">Reviews</a></li>
+                        <li><a href="#top">Back to Top</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Mysuru, Karnataka, India</p>
+                    <p>📞 +91 876 5432 100</p>
+                    <p>✉️ my@mysuru.com</p>
+                    <p>🕐 24/7 Support Available</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyMysuru. All rights reserved. Made with ❤️ for travelers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="hotels.js"></script>
+</body>
+</html>
