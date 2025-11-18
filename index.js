@@ -1,5 +1,11 @@
 
-    
+//     const sidebarLinks = document.querySelectorAll('.sidebar-items a, .sidebar-buttons a');
+// sidebarLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         menuToggle.checked = false;
+//         document.body.style.overflow = 'auto';
+//     });
+// });
         // Hero Swiper
         const heroSwiper = new Swiper('.heroSwiper', {
             loop: true,
