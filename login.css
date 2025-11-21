@@ -16,9 +16,9 @@
             background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
             min-height: 100vh;
             overflow-x: hidden;
-            background-image: url('https://as1.ftcdn.net/v2/jpg/12/52/05/78/1000_F_1252057818_x4ypPPg6xHoOGEqHuwtgJvwZjg0IVZXQ.jpg');
+            background-image: url('Background.png');
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
 
         /* Navigation Styles */
