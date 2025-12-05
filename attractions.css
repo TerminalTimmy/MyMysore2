@@ -244,8 +244,9 @@
     /* Hero Section */
     .hero-section {
       background: linear-gradient(rgba(128, 0, 0, 0.7), rgba(128, 0, 0, 0.7)), 
-                  url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200');
-      background-size: cover;
+                  url('https://as1.ftcdn.net/v2/jpg/05/20/61/28/1000_F_520612858_26UvQS1kVnmX0fe97rCNPNfr3ZCjOES6.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
       background-position: center;
       height: 60vh;
       display: flex;
